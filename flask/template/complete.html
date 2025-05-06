@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Complete Profile</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    /* Your custom styles */
+  </style>
+</head>
+<body>
+
+  <div class="profile-container">
+    <h2>Complete Your Profile</h2>
+    <form action="/complete_profile" method="POST">
+      <input type="text" name="first_name" placeholder="First Name" required>
+      <input type="text" name="last_name" placeholder="Last Name" required>
+      <select name="profession" required>
+        <option value="student">Student</option>
+        <option value="professor">Professor</option>
+        <option value="research_scholar">Research Scholar</option>
+        <option value="working_professional">Working Professional</option>
+      </select>
+      <input type="text" name="district" placeholder="District" required>
+      <input type="text" name="state" placeholder="State" required>
+      <input type="text" name="country" placeholder="Country" required>
+      <button t onclick="window.location.href='/all_journals'">Save Profile</button>
+    </form>
+  </div>
+
+</body>
+</html>
